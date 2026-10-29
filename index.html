@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Saadia Ohahi, étudiante en informatique à HESTIM Casablanca.">
+  <title>Saadia Ohahi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#accueil" class="logo">saadia<span>.</span></a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li><a href="#apropos" data-fr="À propos" data-en="About">À propos</a></li>
+        <li><a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+        <li><a href="#projets" data-fr="Projets" data-en="Projects">Projets</a></li>
+        <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+
+      <button id="language-toggle" class="language-toggle">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section class="hero container section" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">● <span data-fr="Étudiante en informatique · Casablanca"
+          data-en="Computer science student · Casablanca">Étudiante en informatique · Casablanca</span></p>
+
+        <h1>
+          <span data-fr="Bonjour, moi c’est" data-en="Hi, I'm">Bonjour, moi c’est</span>
+          <span class="accent">Saadia.</span><br>
+          <span data-fr="Je construis mon avenir"
+            data-en="Building my future">Je construis mon avenir</span>
+          <span class="outline"
+            data-fr="dans le numérique." data-en="in technology.">dans le numérique.</span>
+        </h1>
+
+        <p class="description"
+          data-fr="Je suis étudiante en première année du cycle préparatoire informatique à HESTIM School, à Casablanca. Je découvre le développement web et j’apprends à transformer mes idées en projets concrets."
+          data-en="I'm a first-year preparatory computer science student at HESTIM School in Casablanca. I'm exploring web development and learning to turn ideas into practical projects.">
+          Je suis étudiante en première année du cycle préparatoire informatique à HESTIM School, à Casablanca. Je découvre le développement web et j’apprends à transformer mes idées en projets concrets.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projets" class="btn btn-primary"
+            data-fr="Découvrir mes projets ↘" data-en="Explore my projects ↘">Découvrir mes projets ↘</a>
+          <a href="#contact" class="btn btn-secondary"
+            data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+        </div>
+
+        <p class="location">⌖ Casablanca, Maroc</p>
+      </div>
+
+      <div class="code-card">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <p><span class="purple">const</span> developer = {</p>
+        <p>&nbsp;&nbsp;name: <span class="green">"Saadia"</span>,</p>
+        <p>&nbsp;&nbsp;learning: [</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"HTML"</span>,</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"CSS"</span>,</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"JavaScript"</span></p>
+        <p>&nbsp;&nbsp;],</p>
+        <p>&nbsp;&nbsp;motivated: <span class="purple">true</span></p>
+        <p>};</p>
+        <div class="code-footer">✓ <span data-fr="Toujours en train d’apprendre"
+          data-en="Always learning">Toujours en train d’apprendre</span></div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section section-alt" id="apropos">
+      <div class="container">
+        <p class="eyebrow">01 / <span data-fr="À propos" data-en="About">À propos</span></p>
+        <h2><span data-fr="En apprendre plus," data-en="Learning more,">En apprendre plus,</span><br>
+          <span class="accent" data-fr="chaque jour." data-en="every day.">chaque jour.</span></h2>
+
+        <div class="about-grid">
+          <div>
+            <p class="lead"
+              data-fr="Je suis une étudiante curieuse et motivée par les possibilités qu’offre l’informatique."
+              data-en="I'm a curious student, motivated by the possibilities of computer science.">
+              Je suis une étudiante curieuse et motivée par les possibilités qu’offre l’informatique.
+            </p>
+            <p
+              data-fr="À HESTIM School, je construis progressivement mes bases en programmation et en développement web. Ce portfolio évoluera avec mes apprentissages, mes projets et mes nouvelles compétences."
+              data-en="At HESTIM School, I'm gradually building my foundations in programming and web development. This portfolio will grow along with my learning, projects, and new skills.">
+              À HESTIM School, je construis progressivement mes bases en programmation et en développement web. Ce portfolio évoluera avec mes apprentissages, mes projets et mes nouvelles compétences.
+            </p>
+            <a class="text-link"
+              href="https://www.linkedin.com/in/saadia-ohahi-62b802316/"
+              target="_blank" rel="noopener noreferrer">
+              <span data-fr="Retrouve-moi sur LinkedIn" data-en="Find me on LinkedIn">Retrouve-moi sur LinkedIn</span> ↗
+            </a>
+          </div>
+
+          <div class="details">
+            <article class="detail-card">
+              <span class="detail-icon">⌘</span>
+              <div><h3 data-fr="Formation" data-en="Education">Formation</h3>
+                <p>HESTIM School · Casablanca</p>
+                <p data-fr="Cycle préparatoire informatique" data-en="Preparatory Computer Science">Cycle préparatoire informatique</p>
+              </div>
+            </article>
+            <article class="detail-card">
+              <span class="detail-icon">✳</span>
+              <div><h3 data-fr="En ce moment" data-en="Currently">En ce moment</h3>
+                <p data-fr="Apprentissage des bases du web : HTML et CSS."
+                  data-en="Learning web fundamentals: HTML and CSS.">Apprentissage des bases du web : HTML et CSS.</p>
+              </div>
+            </article>
+            <article class="detail-card">
+              <span class="detail-icon">↗</span>
+              <div><h3 data-fr="Mon objectif" data-en="My goal">Mon objectif</h3>
+                <p data-fr="Progresser étape par étape et créer des projets utiles."
+                  data-en="Improve step by step and build useful projects.">Progresser étape par étape et créer des projets utiles.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section container" id="competences">
+      <p class="eyebrow">02 / <span data-fr="Compétences" data-en="Skills">Compétences</span></p>
+      <h2><span data-fr="Mes bases," data-en="My foundations,">Mes bases,</span><br>
+        <span class="accent" data-fr="en construction." data-en="in progress.">en construction.</span></h2>
+      <p class="section-intro"
+        data-fr="Les technologies que je découvre et que je souhaite approfondir."
+        data-en="The technologies I'm exploring and want to develop further.">
+        Les technologies que je découvre et que je souhaite approfondir.
+      </p>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-icon">5</span>
+          <div><h3>HTML</h3>
+            <p data-fr="Structurer le contenu d’une page web."
+              data-en="Structure the content of a web page.">Structurer le contenu d’une page web.</p>
+            <span class="skill-level" data-fr="En apprentissage" data-en="Learning">En apprentissage</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">✳</span>
+          <div><h3>CSS</h3>
+            <p data-fr="Découvrir les couleurs, les espacements et les mises en page."
+              data-en="Explore colors, spacing, and layouts.">Découvrir les couleurs, les espacements et les mises en page.</p>
+            <span class="skill-level" data-fr="En apprentissage" data-en="Learning">En apprentissage</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">JS</span>
+          <div><h3>JavaScript</h3>
+            <p data-fr="Découvrir les bases de l’interactivité web."
+              data-en="Explore the basics of web interactivity.">Découvrir les bases de l’interactivité web.</p>
+            <span class="skill-level" data-fr="À approfondir" data-en="To explore">À approfondir</span>
+          </div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-icon">⌘</span>
+          <div><h3 data-fr="Logique" data-en="Problem solving">Logique</h3>
+            <p data-fr="Décomposer les problèmes et tester des solutions."
+              data-en="Break problems down and test solutions.">Décomposer les problèmes et tester des solutions.</p>
+            <span class="skill-level" data-fr="En développement" data-en="Developing">En développement</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section section-alt" id="projets">
+      <div class="container">
+        <p class="eyebrow">03 / <span data-fr="Projets" data-en="Projects">Projets</span></p>
+        <h2><span data-fr="Apprendre en" data-en="Learning by">Apprendre en</span>
+          <span class="accent" data-fr="pratiquant." data-en="doing.">pratiquant.</span></h2>
+        <p class="section-intro"
+          data-fr="Quelques idées pour pratiquer et montrer ma progression."
+          data-en="Some ideas to practise and show my progress.">Quelques idées pour pratiquer et montrer ma progression.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual visual-one"><span>01</span><strong>My Portfolio</strong><small>HTML · CSS</small></div>
+            <div class="project-info">
+              <h3 data-fr="Mon portfolio personnel" data-en="My personal portfolio">Mon portfolio personnel</h3>
+              <p data-fr="Un site pour présenter mon parcours, mes compétences et mes projets."
+                data-en="A website to present my background, skills, and projects.">Un site pour présenter mon parcours, mes compétences et mes projets.</p>
+              <span class="project-status" data-fr="Projet en cours" data-en="In progress">Projet en cours</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-two"><span>02</span><strong>Aa ✳</strong><small>HTML · CSS</small></div>
+            <div class="project-info">
+              <h3 data-fr="Mini page créative" data-en="Creative mini-page">Mini page créative</h3>
+              <p data-fr="Une page pour pratiquer les couleurs, la typographie et les cartes."
+                data-en="A page to practise colors, typography, and cards.">Une page pour pratiquer les couleurs, la typographie et les cartes.</p>
+              <span class="project-status" data-fr="Idée à explorer" data-en="Idea to explore">Idée à explorer</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-three"><span>03</span><strong>{ code }</strong><small>JavaScript</small></div>
+            <div class="project-info">
+              <h3 data-fr="Exercices de programmation" data-en="Coding exercises">Exercices de programmation</h3>
+              <p data-fr="Des exercices pour renforcer ma logique et découvrir la programmation."
+                data-en="Exercises to strengthen my logic and explore programming.">Des exercices pour renforcer ma logique et découvrir la programmation.</p>
+              <span class="project-status" data-fr="À construire" data-en="To build">À construire</span>
+            </div>
+          </article>
+        </div>
+        <p class="note"
+          data-fr="Les projets 2 et 3 sont des idées de départ : remplace-les par tes réalisations réelles."
+          data-en="Projects 2 and 3 are starter ideas: replace them with your real work.">
+          Les projets 2 et 3 sont des idées de départ : remplace-les par tes réalisations réelles.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <p class="eyebrow">04 / Contact</p>
+      <h2><span data-fr="Une idée, une question ?" data-en="An idea or a question?">Une idée, une question ?</span><br>
+        <span class="accent" data-fr="Échangeons." data-en="Let's talk.">Échangeons.</span></h2>
+
+      <div class="contact-grid">
+        <div>
+          <p class="section-intro"
+            data-fr="Tu souhaites discuter d’un projet ou simplement prendre contact ? Retrouve-moi sur LinkedIn."
+            data-en="Want to discuss a project or just get in touch? Find me on LinkedIn.">
+            Tu souhaites discuter d’un projet ou simplement prendre contact ? Retrouve-moi sur LinkedIn.
+          </p>
+          <a class="btn btn-primary linkedin-btn"
+            href="https://www.linkedin.com/in/saadia-ohahi-62b802316/"
+            target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <label for="name" data-fr="Ton nom" data-en="Your name">Ton nom</label>
+          <input id="name" name="name" type="text" required minlength="2"
+            placeholder="Ex. : Amine" data-placeholder-fr="Ex. : Amine" data-placeholder-en="e.g. Alex">
+
+          <label for="email" data-fr="Ton e-mail" data-en="Your email">Ton e-mail</label>
+          <input id="email" name="email" type="email" required
+            placeholder="amine@exemple.com" data-placeholder-fr="amine@exemple.com" data-placeholder-en="alex@example.com">
+
+          <label for="message" data-fr="Ton message" data-en="Your message">Ton message</label>
+          <textarea id="message" name="message" rows="4" required minlength="10"
+            placeholder="Écris ton message ici..." data-placeholder-fr="Écris ton message ici..." data-placeholder-en="Write your message here..."></textarea>
+
+          <button type="submit" class="btn btn-primary"
+            data-fr="Préparer le message ↗" data-en="Prepare message ↗">Préparer le message ↗</button>
+          <p id="form-note" class="note"
+            data-fr="Le formulaire prépare un e-mail ; il ne l’envoie pas automatiquement."
+            data-en="The form prepares an email; it does not send it automatically.">
+            Le formulaire prépare un e-mail ; il ne l’envoie pas automatiquement.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#accueil" class="logo">saadia<span>.</span></a>
+      <p>© <span id="year"></span> Saadia Ohahi · Casablanca</p>
+      <a href="https://www.linkedin.com/in/saadia-ohahi-62b802316/"
+        target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+  </footer>
+
+</body>
+</html>
